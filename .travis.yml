@@ -1,0 +1,12 @@
+env: 
+  global: 
+    - MAIN=main
+    
+jobs:
+  include:
+    - stage: test
+      script: echo one
+    - stage: test
+      script: echo two
+    - stage: deploy
+      script: echo deploy
